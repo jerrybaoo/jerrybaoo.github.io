@@ -7,7 +7,7 @@ categories: cosmos pos staking
 # Cosmos Validator Status
 Cosmos SDK 所代表的 POS 是比较典型的POS 系统。Validator 是POS 系统中的核心，因此讨论下，validator 的不同行为造成的影响。   
 在下面的图表中，方框表示 Validator 可能处于的状态，线段表示状态变化的原因，箭头表示迁移方向。
-![validator status](../images/validator-status.png)
+![validator status](https://github.com/jerrybaoo/jerrybaoo.github.io/blob/main/docs/images/validator-status.png)
 
 Validator 的状态由三个字段表示：
 
