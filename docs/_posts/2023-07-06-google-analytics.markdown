@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  "Google Analysis 和 Github Pages"
-date:   2023-07-10 21:14:18 +0800
-categories: frontend util
+title:  "Google Analytics 和 Github Pages"
+date:   2023-07-10 17:14:18 +0800
+categories: web 
 ---
-# Google Analysis 和 Github Pages
+# Google Analytics 和 Github Pages
 使用github pages 和 jekyll 可以快速搭建一个 blog. 那么问题来了，如何知道blog的访问数据呢？
-Google Analysis 是非常专业的工具，如何使用最简单的方式集成到github pages 当中呢。
+Google Analytics 是非常专业的工具，如何使用最简单的方式集成到github pages 当中呢。
 
-1. 获取 TrackID, 直接在 Google Analysis 当中注册账号，并设置跟踪网站既能获取对应的TrackID.
+1. 获取 TrackID, 直接在 Google Analytics 当中注册账号，并设置跟踪网站既能获取对应的TrackID.
 2. 获取跟踪代码，类似
 ```
 <!-- Google tag (gtag.js) -->
