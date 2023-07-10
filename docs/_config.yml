@@ -30,8 +30,7 @@ github_username: jerrybaoo
 theme: minima
 plugins:
   - jekyll-feed
-ga_track_id: 'G-PBWHN2ZF80'
-ga_domain: auto	
+google_analytics: G-PBWHN2ZF80
 
 # Exclude from processing.
 # The following items will not be processed, by default.
