@@ -11,7 +11,7 @@ categories: distributed-system
 
 ## 强一致性复制技术
 以下是从各个维度对比分布式复制算法很出名的一张图，很有参考价值。没有最好的算法，只有最适合使用场景的算法。
-![lamport clock](../images/google-transact09.png)
+![lamport clock](https://github.com/jerrybaoo/jerrybaoo.github.io/raw/main/docs/images/google-transact09.png)
 
 ### 主从复制（Master/Slaver）
 一般主从复制，都是在 Master 上进行写操作，Master 将写日志分发给Slaver。

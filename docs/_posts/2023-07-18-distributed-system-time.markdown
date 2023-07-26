@@ -18,7 +18,7 @@ categories: distributed-system
 ## 逻辑时钟
 逻辑时钟依赖计数器和通信确定分布式系统当中的事件的顺序。    
 ### 兰伯特时钟
-![lamport clock](../images/clocks-lamport.png)
+![lamport clock](https://github.com/jerrybaoo/jerrybaoo.github.io/raw/main/docs/images/clocks-lamport.png)
 1. 如果事件是发送消息，则该事件的时间戳与消息一起发送。
 2. 如果事件是接收消息，则进程的时间戳记计数器的当前值（在此事件之前刚刚增加）与接收到的消息中的时间戳记进行比较。
 3. 如果接收到的消息的时间戳大于或等于当前事件的时间戳，则事件和进程的时间戳计数器都将用接收到的消息中的时间戳值加1进行更新。这确保了接收到的事件的时间戳以及该进程上的所有其他时间戳将大于发送消息以及该进程上的所有先前消息的事件的时间戳。
@@ -30,7 +30,7 @@ categories: distributed-system
 3. 当收到消息时：  
     将向量中的每个元素更新为max(local, received)  
     增加表示向量中当前节点的逻辑时钟值
-![vector clock](../images/vector_clock.svg.png)
+![vector clock](https://github.com/jerrybaoo/jerrybaoo.github.io/raw/main/docs/images/vector_clock.svg.png)
 1. 如果时间戳记V的每个元素小于或等于时间戳记W的相应元素，则V因果顺序在W之前，并且事件不是并发的。
 2. 如果时间戳记V的每个元素都大于或等于时间戳记W的相应元素，则W因果顺序在V之前，并且事件不是并发的。
 3. 如果这些条件都不适用，并且V中的某些元素大于W而其他元素小于W中的对应元素，则事件是并发的。
